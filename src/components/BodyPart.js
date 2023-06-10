@@ -9,8 +9,8 @@ const BodyPart = ({ item, setBodyPart, bodyPart}) => {
         alignItems='center'
         justifyContent='center'
         className='bodyPart-card'
+        mt={2}
         sx={{
-              borderTop: bodyPart === item ? '4px solid #ff2625' : '',
               backgroundColor: '#fff',
               borderBottomLeftRadius: '20px',
               width: '270px',
@@ -24,7 +24,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart}) => {
             }}
             >
     
-        <img src={Icon} alt='dumbell' style={{ width: '40px', height: '40px'}}/>\
+        <img src={Icon} alt='dumbell' style={{ width: '40px', height: '40px'}}/>
         <Typography fontSize='24px' fontWeight='bold' color='#3A1212' textTransform='capitalize'>{item}</Typography>
     </Stack>
   )
